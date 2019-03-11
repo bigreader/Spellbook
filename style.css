@@ -1,0 +1,354 @@
+
+/* COLORS
+#F5EAD7 Paper
+#402B5C Ink
+#786C89 Ink Faded
+#DCCEB8 Rule
+#A23527 Damage
+*/
+
+body {
+    background-color: #F5EAD7;
+    color: #402B5C;
+    font-family: Baskerville, -apple-system, serif;
+    font-size: 14pt;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (min-width: 400px) {
+	body {
+		width: 80%;
+	}
+}
+
+@media (min-width: 700px) {
+	body {
+		width: 600px;
+	}
+}
+@media (min-width: 1200px) {
+	body {
+		width: 800px;
+	}
+}
+
+body.bg-fire {
+	background: top right / 30% no-repeat url("http://private.joshdudley.net/spellbook/img/bg/corner-fire.png"), #F5EAD7;
+}
+
+#main {
+	margin: 48px 8px 16px 16px;
+}
+
+nav {
+	margin-top: -24px;
+	margin-bottom: 24px;
+}
+
+nav.bar {
+	margin: 16px 0 -12px 0;
+}
+
+nav.bar a {
+	padding: 4px 4px 2px 0;
+}
+
+nav.bar a.here {
+	color: #A23527;
+	font-weight: 900;
+	text-decoration: underline;
+}
+
+a {
+	color: inherit;
+}
+
+article.spells a,
+article.toc a,
+li a,
+nav a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+h1 { /* page headers */
+	font-family: "Cochin", Baskerville, -apple-system, Papyrus, serif;
+	font-size: 36pt;
+	line-height: 30pt;
+	letter-spacing: -2px;
+}
+
+h2 { /* page headers */
+	font-size: 18pt;
+	font-style: italic;
+}
+
+h3 { /* page headers */
+	color: #786C89;
+	font-size: 14pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h4 { /* page headers */
+	font-family: "Cochin", Baskerville, -apple-system, Papyrus, serif;
+	font-weight: bold;
+	font-size: 24pt;
+	line-height: 24pt;
+	letter-spacing: -0.5px;
+}
+
+h4:after {
+	font-family: Baskerville, -apple-system, Papyrus, serif;
+	content: attr(slot);
+	font-size: 18pt;
+	font-weight: 900;
+	line-height: 18pt;
+}
+
+.toc h3 {
+	margin-top: 32px;
+	margin-bottom: 8px;
+}
+.toc h4 {
+	margin-bottom: 8px;
+}
+
+span.h, nav { /* page headers */
+	color: #786C89;
+	font-size: 10pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+span.slot {
+	font-size: 18pt;
+	font-weight: 900;
+	line-height: 18pt;
+}
+
+
+.color-damage {
+	color: #A23527 !important;
+}
+
+
+img.full {
+	width: 100%;
+}
+
+img.most {
+	width: 90%;
+	margin: 0 5%;
+	margin-top: 16px;
+}
+
+img.some {
+	width: 70%;
+	margin: 0 15%;
+	margin-top: 16px;
+}
+
+img.sigil {
+	width: 80px;
+	float: left;
+	margin-right: 16px;
+}
+
+img.sigil.small {
+	width: 60px;
+	float: left;
+	margin-right: 8px;
+}
+
+img.sigil.tiny {
+	width: 32px;
+	float: right;
+	margin-right: 8px;
+}
+
+
+header .title {
+	padding-left: 96px;
+}
+
+header hr {
+	margin: 0;
+}
+
+
+section {
+	margin-top: 16px;
+}
+
+
+hr {
+	border: none;
+	border-bottom: 1px solid #DCCEB8;
+	margin: 16px 24px;
+}
+
+hr.full {
+	margin: 16px 8px 24px 0;
+}
+
+
+.alert {
+	margin: 24px 8px 16px 0;
+	padding: 8px 24px 16px 16px;
+	background-color: #DCCEB8;
+	border-radius: 6px;
+	font-style: italic;
+}
+
+.alert.unknown {
+	padding: 1px 24px 8px 16px;
+	border-left: solid 12px #786C89;
+}
+
+.alert.warn {
+	border-left: solid 12px #A23527;
+}
+
+
+.spell,
+.ability {
+	margin: 16px 0;
+}
+
+.spell.summary {
+	margin: 16px 0;
+	position: relative;
+	min-height: 60px;
+}
+
+.spell.summary .stats {
+	position: absolute;
+	bottom: 0;
+	left: 68px;
+}
+
+.spell p {
+	font-style: italic;
+	margin-top: 4px;
+}
+
+.ability p {
+	margin-top: 4px;
+}
+
+
+.callout {
+	float: right;
+	font-size: 18pt;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.callin {
+	font-size: 18pt;
+	font-weight: 600;
+	font-style: italic;
+	margin-right: 8px;
+	text-transform: none;
+	letter-spacing: 0;
+}
+
+
+.stats {
+	color: #786C89;
+	font-size: 10pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.stats .stat {
+	font-size: 14pt;
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: normal;
+	color: #402B5C;
+	margin-right: 4px;
+}
+
+.stats .stat.main {
+	font-weight: 900;
+	font-size: 16pt;
+	color: #A23527;
+}
+
+.stats .stat:before {
+	content: "\a0";
+}
+
+
+#data table td {
+	font-weight: 600;
+	padding: 2px;
+}
+
+#data table td:first-child {
+	color: #786C89;
+	font-size: 10pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: right;
+	padding-right: 4px;
+	width: 80px;
+}
+
+
+#description p,
+#notes p,
+.alert p {
+	margin: 0;
+	margin-top: 8px;
+}
+
+.flavor {
+	font-style: italic;
+}
+
+.ref {
+	font-size: 10pt;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	white-space: nowrap;
+}
+
+span.ref {
+	margin-left: 4px;
+}
+
+
+ul {
+	color: #786C89;
+	font-size: 12pt;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	padding: 4px 0;
+}
+
+
+
+
+
+
+

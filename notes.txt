@@ -1,0 +1,132 @@
+
+
+
+
+DATA
+
+
+
+Targeting
+	range
+	area
+	targets
+Time
+	casting time
+	duration
+		concentration
+Requirements
+	components
+Rolls
+	attack
+	save
+Effect
+	damage
+		type
+
+
+range
+area
+targets
+casting time
+duration & concentration
+components
+attack
+save
+damage & type
+
+area: 15ft cone
+components: VS
+save: DEX
+damage & type: 3d6 fire
+
+
+
+
+
+SPELLS
+
+Damage
+Combat
+Action
+Utility
+
+firebolt
+rayoffrost
+shockinggrasp
+truestrike
+minorillusion
+friends
+
+- burninghands
+- witchbolt
+- earthtremor
+- pyrotechnics
+shield
+
+scorchingray
+- suggestion
+
+fireball
+
+
+
+
+DAMAGE
+anydice.com/program/7777
+
+attack
+(d20+7 < 15)? A:B
+
+save
+(d20+2 < 15)? A:B
+
+targets multiplication uses repeated addition
+
+
+SAVE: [roll d20+2 for #fail or #save] * targets
+ATTACK: [roll d20+7 for 0 or #damage] * targets
+
+Fireball
+SAVE: fail 8d6, save 8d6/2, targets 4
+
+Burning Hands
+SAVE: fail 3d6, save 3d6/2, targets 2
+
+Scorching Ray
+ATTACK: damage 2d6, targets 3
+
+Witch Bolt
+1: ATTACK: damage 2d12
+1T: ATTACK: damage 2d12, targets 2
+2: ATTACK: damage 3d12
+
+Earth Tremor
+SAVE: fail 1d6, save 0, targets 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
