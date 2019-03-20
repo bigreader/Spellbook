@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <title>Spell - Spellbook</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <img src="assets/img/sigil/witchbolt.png" class="sigil" />
+            <div class="title">
+                <h1 id="name">Spell Name</h1>
+                <h2 id="level">first level evocation</h2>
+            </div>
+        </header>
+        <article>
+            <section id="data">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Range</td>
+                            <td>60ft (12sq)</td>
+                        </tr>
+                        <tr>
+                            <td>Area</td>
+                            <td>20ft rad.</td>
+                        </tr>
+                        <tr>
+                            <td>Targets</td>
+                            <td>1 / 2</td>
+                        </tr>
+                        <tr>
+                            <td>Time</td>
+                            <td>Reaction</td>
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>1 minute (conc.)</td>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>500gp diamond (consumed)</td>
+                        </tr>
+                        <tr>
+                            <td>Attack</td>
+                            <td>Ranged</td>
+                        </tr>
+                        <tr>
+                            <td>Save</td>
+                            <td>Dexterity</td>
+                        </tr>
+                        <tr>
+                            <td>Damage</td>
+                            <td class="color-damage">2d6 fire</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id="damage">
+                <h3>Damage</h3>
+                <div class="stats">
+                    Min<span class="stat">10</span>
+                    Low<span class="stat">20</span>
+                    Avg<span class="stat main">30</span>
+                    High<span class="stat">40</span>
+                    Max<span class="stat">50</span>
+                </div>
+                <img src="assets/img/damage/witchbolt.png" class="full">
+                <div class="stats">
+                    <span class="callin color-damage">2d6</span>
+                    Type<span class="stat">Fire</span>
+                    Attack<span class="stat">Ranged</span>
+                    Save<span class="stat">Ranged</span>
+                    Effect<span class="stat">Prone</span>
+                    Sorcery<span class="stat">Empowered, Twinned</span>
+                </div>
+            </section>
+            <hr>
+            <section id="description"></section>
+            <hr>
+            <section id="notes"></section>
+        </article>
+        <footer>
+            <hr>
+            <ul>
+                <li><a href="spellbook.html#witchbolt">View in spellbook</a></li>
+                <li><a href="damage.html#witchbolt">View damage spells</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/spell.js"></script>
+</body>
+</html>
